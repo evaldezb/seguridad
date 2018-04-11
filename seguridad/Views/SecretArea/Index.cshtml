@@ -1,0 +1,29 @@
+﻿@model seguridad.Controllers.CredicardModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<br />
+<h2>Area Super Secreta</h2>
+
+
+<form  method="post">
+    <hr />
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Tipo"></label>
+        <input asp-for="Tipo" class="form-control" />
+        <span asp-validation-for="Tipo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Numero"></label>
+        <input asp-for="Numero" class="form-control" />
+        <span asp-validation-for="Numero" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <button type="submit" class="btn btn-default">Guardar</button>
+    </div>
+ 
+</form>
